@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posicionamento Absoluto e Fixo</title>
+    <style>
+        body{
+            background: #007fc7;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .conteiner{
+            background: #FFF;
+            width: 500px;
+            margin: 10px auto;
+            padding: 10px;
+            
+        }
+        p{
+            width: 200px;
+            
+        }
+        .fixed{
+            border: 1px solid blue;
+            position: fixed;/*Não afeta o fluxo, mas fica na janela o tempo todo*/
+            top: 0px;
+            left: 0px;
+        }
+        .absolute{
+            border: 1px solid blue;
+            position: absolute;/*Não afeta o fluxo*/
+            top: 80px;
+            right: 00px;
+        }
+
+        .relative{
+            border: 1px solid red;
+            position: relative;
+            /* left,right,tob e bottom
+            top: -305px;
+            right: -210px;*/
+        }
+        </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Excepteur nisi nostrud pariatur ea enim nostrud nulla anim officia incididunt incididunt.</h1>
+        <p>P1 Nisi eiusmod ex dolore officia nisi nisi cillum in qui dolore. Voluptate culpa qui cupidatat qui est ut laboris. Commodo ex adipisicing exercitation irure id ex aute eu anim elit occaecat officia. Sint exercitation enim et cupidatat sit amet aute veniam non deserunt. Irure irure laboris proident exercitation magna duis elit aute qui id do cillum esse. Amet eu magna eu laboris anim voluptate anim aute aliquip nisi.</p>
+        <p class="fixed">P2 Nisi eiusmod ex dolore officia nisi nisi cillum in qui dolore. Voluptate culpa qui cupidatat qui est ut laboris. Commodo ex adipisicing exercitation irure id ex aute eu anim elit occaecat officia. Sint exercitation enim et cupidatat sit amet aute veniam non deserunt. Irure irure laboris proident exercitation magna duis elit aute qui id do cillum esse. Amet eu magna eu laboris anim voluptate anim aute aliquip nisi.</p>
+        <p>P3 Nisi eiusmod ex dolore officia nisi nisi cillum in qui dolore. Voluptate culpa qui cupidatat qui est ut laboris. Commodo ex adipisicing exercitation irure id ex aute eu anim elit occaecat officia. Sint exercitation enim et cupidatat sit amet aute veniam non deserunt. Irure irure laboris proident exercitation magna duis elit aute qui id do cillum esse. Amet eu magna eu laboris anim voluptate anim aute aliquip nisi.</p>
+
+    </div>
+
+</body>
+</html>
